@@ -1,0 +1,180 @@
+html{
+	scroll-behavior: smooth;
+	font-size: 12px;
+	cursor: pointer;
+}
+body{
+	margin: 0;
+}
+.topbar{
+	background-color: #f1f1f1;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav a{
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: 10px;
+	text-transform: capitalize;
+}
+nav a:hover{
+	background-color: skyblue;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+.banner{
+	background: linear-gradient(rgba(6,133,166,0.5),rgba(6,133,166,0.7),rgba(6,133,166,0.9)),url(images/code.jpg);
+height: 500px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-decoration: none;
+text-transform: capitalize;
+font-size: 18px;
+font-weight:600;
+font-family: sans-serif;
+color: white;	
+
+}
+
+.card{
+	display: flex;
+	justify-content: space-between;
+
+}
+.card div{
+	flex: 1;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	letter-spacing: 3px;
+	font-weight: 600;
+	padding: 3px;
+	margin: 20px;
+	margin-top: -160px;
+}
+.card p{
+	font-size: 18px;
+	padding: 8px;
+	font-family: sans-serif;
+}
+.card a{
+	color: white;
+	font-size: 15px;
+	font-family: sans-serif;
+	border: 1px solid white;
+	padding: 8px;
+	text-transform: capitalize;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.card a:hover{
+	background-color: skyblue;
+	color: white;
+}
+
+.first{
+	background: linear-gradient(rgba(95,27,14,0.89),rgba(95,27,14,0.89),rgba(95,27,14,0.89)),url(images/dev.jpg);
+height: 300px;
+}
+.second{
+	background: linear-gradient(rgba(49,67,58,0.89),rgba(49,67,58,0.89),rgba(49,67,58,0.89)),url(images/lady.jpg);
+height: 300px;
+}
+.third{
+	background: linear-gradient(rgba(11,3,47,0.89),rgba(11,3,47,0.89),rgba(11,3,47,0.89)),url(images/codes.png);
+height: 300px;
+}
+
+.regbanner {
+
+	background:linear-gradient(rgba(33,27,14,0.102),rgba(95,27,12,0.502),rgba(95,26,14,0.601)),url(images/react_blog.png);
+    height:550px;
+    width: 550px;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    
+}
+.regbanner h1{
+	font-size: 44px;
+	text-transform: capitalize;
+	margin-left:3%;
+	color:white;
+	font-weight: bold;
+}
+$cream: #fedcca;
+*{
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: #eb4f5c;
+}
+// Background text
+.rock{
+	font-family: sans-serif;
+	font-size: 200px;
+	margin: 0px;
+	color: #d4304b;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.hand{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	animation: rockit .8s ease infinite alternate;
+}
+.palm{
+	width: 125px;
+	height: 150px;
+	background: $cream;
+	transform: rotate(86deg);
+	box-shadow: inset 0 0 0 50px #e77f7b;
+
+
+	&:after{
+		content:'';
+		background: #f2ada1;
+		width: 20px;
+		height: 30px;
+		border-radius: 0 0 0 100% / 50%;
+		position: absolute;
+		left: -20px;
+		bottom: 25px
+		z-index: 5;
+	}
+	&:before{
+		content: '';
+		background-image: linear-gradient(-180deg,#e56c4c 0, #f68e 100%);
+		width: 100%;
+		height: 30px;
+		border-radius: 50%;
+		position: absolute;
+		left: 0px;
+		bottom: -15px;
+	}
+}
+
